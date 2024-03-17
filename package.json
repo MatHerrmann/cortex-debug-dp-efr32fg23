@@ -1,0 +1,42 @@
+{
+	"publisher": "MHerrmann",
+	"name": "cortex-debug-dp-efr32fg23",
+	"displayName": "Cortex-Debug: Device Support Pack - EFR32FG23",
+	"description": "This package contains additional support functionality (SVD definitions) for Cortex-Debug for EFR32FG23 devices",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.87.0"
+	},
+	"categories": [
+		"Debuggers"
+	],
+	"keywords": [
+		"Cortex-Debug",
+		"Cortex-Debug Device Support Pack",
+		"cortex-m",
+		"gdb",
+		"debug",
+		"embedded"
+	],
+	"activationEvents": [
+		"onDebugResolve:cortex-debug"
+	],
+	"main": "./out/extension.js",
+	"contributes": {},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.87.0",
+		"@typescript-eslint/eslint-plugin": "^7.2.0",
+		"@typescript-eslint/parser": "^7.2.0",
+		"eslint": "^8.57.0",
+		"typescript": "^5.4.2"
+	},
+	"dependencies": {
+		"path": "^0.12.7"
+	}
+}
